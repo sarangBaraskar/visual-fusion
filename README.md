@@ -1,12 +1,44 @@
-# React + Vite
+# 🎨 Visual Fusion – Animated Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Visual Fusion is a fully animated, modern, and user-friendly personal portfolio website.  
+It is designed to showcase my skills, projects, and technical expertise in a visually engaging and professional manner.
 
-Currently, two official plugins are available:
+The project focuses on smooth animations, clean UI, responsive design, and an intuitive user experience to create a strong digital presence.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Fully animated and interactive UI
+- Modern, clean, and professional design
+- Responsive layout for all devices
+- Smooth navigation and user-friendly experience
+- Dedicated sections for skills, projects, and personal information
+- Performance-optimized and well-structured code
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5  
+- CSS3  
+- JavaScript (ES6+)  
+- React.js  
+- Tailwind CSS  
+- Git & GitHub  
+
+---
+
+## 📂 Project Structure
+
+```text
+visual-fusion/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   └── App.jsx
+│
+├── public/
+├── package.json
+└── README.md
