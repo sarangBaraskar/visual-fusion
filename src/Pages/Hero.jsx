@@ -1,3 +1,4 @@
+import { motion} from "framer-motion";
 
 
 const textReveal = {
@@ -58,7 +59,7 @@ export default function Hero() {
           alt="3D Model"
           auto-rotate
           auto-rotate-delay="1"
-          rotation-per-second="10"
+          rotation-per-second="2.8"
           camera-controls
           interaction-policy="allow-when-focused"
           style={{ width: "400px", height: "400px" }}
