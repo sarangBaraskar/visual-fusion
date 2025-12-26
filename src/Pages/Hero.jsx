@@ -1,5 +1,4 @@
-import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
+
 
 const textReveal = {
   animate: { transition: { staggerChildren: 0.06 } }
@@ -14,40 +13,7 @@ const letter = {
 
 
 export default function Hero() {
-  const controls = useAnimation();
-
-  // start normal rotation on load
-  useEffect(() => {
-    startNormal();
-  }, []);
-
-  const startNormal = async () => {
-    await controls.stop
-    controls.start({
-      rotateY: [0, 360],
-      transition: {
-        duration: 6,
-        ease: "linear",
-        repeat: Infinity
-      }
-    });
-  };
-
-  const startSlow = async () => {
-    await controls.stop()
-    controls.start({
-      rotateY: [0, 360],
-      rotateX: -15,
-      scale: 2,
-      transition: {
-        duration: 12, // slower on hover
-        ease: "linear",
-        repeat: Infinity
-      }
-    });
-  };
-
-
+  
   return (
     <>
       <section className="relative py-28 flex flex-col items-center text-center">
@@ -87,22 +53,18 @@ export default function Hero() {
         </motion.p>
 
 
+        <model-viewer
+          src="/svg11.glb"
+          alt="3D Model"
+          auto-rotate
+          auto-rotate-delay="1"
+          rotation-per-second="10"
+          camera-controls
+          interaction-policy="allow-when-focused"
+          style={{ width: "400px", height: "400px" }}
+        />
 
 
-        <div style={{ perspective: 1000 }}>
-          <motion.img
-            src="/svg.png"
-            alt="Rotating image"
-            style={{
-              width: 260,
-              transformStyle: "preserve-3d",
-              cursor: "pointer"
-            }}
-            animate={controls}
-            onHoverStart={startSlow}
-            onHoverEnd={startNormal}
-          />
-        </div>
 
       </section>
     </>
