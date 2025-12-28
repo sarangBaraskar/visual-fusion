@@ -1,17 +1,19 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Snowfall from "react-snowfall";
 import Header from "./component/Header";
 import Footer from "./component/footer";
 import Hero from "./Pages/Hero";
 import Profile from "./Pages/Profile";
 import Mproject from "./Pages/Mproject";
+import Intro from "./component/intro";
 
 
 
 
 export default function App() {
   const reactorRef = useRef(null);
-
+  const [intro, setIntro] = useState(true);
+  
   /* -------- Mouse Parallax (Soft) -------- */
   useEffect(() => {
     const el = reactorRef.current;
@@ -25,6 +27,22 @@ export default function App() {
     return () => window.removeEventListener("mousemove", move);
   }, []);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIntro(false);
+    }, 2500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (intro) {
+  return <Intro />;
+}
+
+
+
+
+
   return (
     <>
       <Snowfall
@@ -33,7 +51,7 @@ export default function App() {
           width: '100vw',
           height: '100vh',
           zIndex: 0,
-          pointerEvents:"none"
+          pointerEvents: "none"
         }}
       />
       <div className="min-h-screen bg-gradient-to-b from-[#020617] to-[#020617] text-slate-200 overflow-x-hidden">
@@ -44,24 +62,24 @@ export default function App() {
 
         {/* NAVBAR */}
 
-        <Header/>
+        <Header />
 
         {/* HERO */}
 
-        <Hero/>
+        <Hero />
 
         {/* PROFILE */}
 
-        <Profile/>
+        <Profile />
 
         {/* MAJOR PROJECT */}
-        
-        <Mproject/>
-        
+
+        <Mproject />
+
         {/* FOOTER */}
-        
-        <Footer/>
-      
+
+        <Footer />
+
       </div>
     </>
   );

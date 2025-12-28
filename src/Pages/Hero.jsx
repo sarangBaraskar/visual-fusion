@@ -50,7 +50,7 @@ export default function Hero() {
               {char === " " ? "\u00A0" : char}
             </motion.span>
           ))}
-          .
+        
         </motion.p>
 
 

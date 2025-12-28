@@ -8,78 +8,71 @@ const softZoom = {
 export default function Mproject() {
   return (
     <>
-      {/* <motion.section
-          variants={softZoom}
-          viewport={{ once: true }}
-          className="max-w-7xl mx-auto px-6 py-24"
-        >
-          <div className="relative overflow-hidden z-0 rounded-2xl">
-            <img
-              src="/ss.jpg"
-              alt="Tony Stark"
-              className="w-full saturate-0  contrast-125 mix-blend-screen"
-            />
-            <div className="absolute inset-0 bg-[repeating-linear-gradient(90deg,rgba(34,211,238,0.12)_0_1px,transparent_1px_6px)]" />
-          </div>
-          <p className="mt-10 text-center text-slate-500 tracking-widest text-sm">
-            PART OF THE JOURNEY IS THE END
-          </p>
-        </motion.section> */}
+      <h1
+        className="
+    w-full text-center mb-12
+    text-4xl md:text-5xl font-semibold tracking-tight
+    bg-clip-text text-transparent
+    bg-gradient-to-r from-cyan-200 to-emerald-200
+  "
+      >
+        SKILLS
+      </h1>
 
 
       <div className="max-w-7xl mx-auto px-6 py-6 flex flex-wrap gap-6">
-        <div className="w-full z-1 md:w-[48%]">
-          <img src="/ss0.png" alt="Armor" className="rounded-xl w-full" />
+
+        <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs backdrop-blur">
+          <h5 class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">C & C++</h5>
+          <p class="text-body mb-6">Strong foundation in programming with problem-solving using C language.
+            Good knowledge of object-oriented programming and efficient coding in C++.
+          </p>
         </div>
 
-        <div className="w-full z-1 md:w-[48%]">
-          <img src="/ss1.png" alt="Armor" className="rounded-xl w-full" />
+
+
+        <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs backdrop-blur">
+          <h5 class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">HTML:5</h5>
+          <p class="text-body mb-6">Ability to create clean and well-structured web pages using HTML.</p>
         </div>
 
-        <div className="w-full z-1 md:w-[48%]">
-          <img src="/ss2.png" alt="Armor" className="rounded-xl w-full" />
+
+
+        <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs backdrop-blur">
+          <h5 class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">CSS:3</h5>
+          <p class="text-body mb-6">Skilled in designing responsive and attractive layouts with CSS,Talwind.</p>
         </div>
 
-        <div className="w-full z-1 md:w-[48%]">
-          <img src="/ss3.png" alt="Armor" className="rounded-xl w-full" />
+        <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs backdrop-blur">
+          <h5 class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">JS5/JS6</h5>
+          <p class="text-body mb-6">Capable of building interactive and dynamic web applications using JavaScript.</p>
+        </div>
+
+        <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs backdrop-blur">
+          <h5 class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">React.js</h5>
+          <p class="text-body mb-6">Hands-on experience in creating modern single-page applications with React and better knowledge how to handle state using Hooks or Redux.</p>
+        </div>
+
+        <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs backdrop-blur">
+          <h5 class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">React-Redux</h5>
+          <p class="text-body mb-6">i am Familiar with React-Redux for managing application state in React applications and how to handle middleware Globle-State.</p>
+        </div>
+
+        <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs backdrop-blur">
+          <h5 class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">Node.js</h5>
+          <p class="text-body mb-6">Familiar with Node.js for building basic server-side applications and REST APIs. Have experience working with Express.js, handling routes, middleware, and integrating MongoDB for simple backend functionality. Comfortable with understanding backend logic and API integration.</p>
+        </div>
+
+        <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs backdrop-blur">
+          <h5 class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">Express</h5>
+          <p class="text-body mb-6">Familiar with Express.js for creating RESTful APIs and managing routing, middleware, and request–response handling. Have experience building simple backend services with structured and maintainable code.</p>
+        </div>
+
+        <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs backdrop-blur">
+          <h5 class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">MongoDb</h5>
+          <p class="text-body mb-6">Familiar with MongoDB for designing basic schemas, performing CRUD operations, and managing data using Mongoose. Have experience integrating MongoDB with Node.js applications for data storage and retrieval.</p>
         </div>
       </div>
-
-
-      {/* <div className="flex flex-wrap flex-cols-2 gap-2  px-6 py-2 items-center  ">
-        <div className="">
-          <img src="/mark 47.png" className="rounded-xl border z-1 border-cyan-400/30" alt="Armor" />
-        </div>
-        <div className="rounded-xl">
-          <img src="/mark 47.png" alt="Armor" />
-        </div>
-      </div>
-      <div className="flex flex-wrap flex-col-2 gap-2 px-6 py-2 items-center max-w-7xl mx-auto">
-        <div className=" rounded-xl">
-          <img src="/mark 47.png" alt="Armor" />
-        </div>
-        <div className="rounded-xl">
-          <img src="/mark 47.png" alt="Armor" />
-        </div>
-      </div> */}
-
-
-
-
-      {/* <div className="grid h-screen grid-cols-2 grid-rows-2 justify-items-center content-center gap-4">
-          <div className="">
-            <img src="/mark 47.png" alt="Armor" />
-          </div>
-          <div className="">
-            <img src="/mark 47.png" alt="Armor" />
-          </div>
-          <div className="">
-            <img src="/mark 47.png" alt="Armor" />
-          </div>
-          <div className="">
-            <img src="/mark 47.png" alt="Armor" />
-          </div>
-        </div> */}
 
     </>
   )
