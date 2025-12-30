@@ -1,11 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import Snowfall from "react-snowfall";
 import Header from "./component/Header";
-import Footer from "./component/footer";
-import Hero from "./Pages/Hero";
-import Profile from "./Pages/Profile";
-import Mproject from "./Pages/Mproject";
 import Intro from "./component/intro";
+import { Route, Routes } from "react-router";
+import Aboutsection from "./Pages/Aboutsection";
 
 
 
@@ -13,7 +11,7 @@ import Intro from "./component/intro";
 export default function App() {
   const reactorRef = useRef(null);
   const [intro, setIntro] = useState(true);
-  
+
   /* -------- Mouse Parallax (Soft) -------- */
   useEffect(() => {
     const el = reactorRef.current;
@@ -36,8 +34,8 @@ export default function App() {
   }, []);
 
   if (intro) {
-  return <Intro />;
-}
+    return <Intro />;
+  }
 
 
 
@@ -62,23 +60,11 @@ export default function App() {
 
         {/* NAVBAR */}
 
-        <Header />
+        <Routes>
+          <Route path="/" element={<Header />} />
+          <Route path="/Aboutsection" element={<Aboutsection />} />
+        </Routes>
 
-        {/* HERO */}
-
-        <Hero />
-
-        {/* PROFILE */}
-
-        <Profile />
-
-        {/* MAJOR PROJECT */}
-
-        <Mproject />
-
-        {/* FOOTER */}
-
-        <Footer />
 
       </div>
     </>
