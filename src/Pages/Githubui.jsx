@@ -5,25 +5,35 @@ export default function Githubui({ userData }) {
     <div className="max-w-6xl mx-auto px-6 py-16">
       
       {/* MAIN FLEX CONTAINER */}
-      <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
+      <div className="flex flex-col md:flex-row items-center gap-6 md:gap-1">
 
-        {/* IMAGE SECTION (LEFT) */}
+        {/* IMAGE SECTION */}
         <a
           href={userData.html_url}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full md:w-1/2 flex z-1 ml-16 justify-center md:justify-start"
+          className="w-full md:w-1/2 flex justify-center md:justify-start z-10"
         >
           <img
             src={userData.avatar_url}
             alt={userData.login}
-            className="w-100 h-100  rounded-lg object-cover"
+            className="
+              w-64 h-64
+              md:w-80 md:h-80
+              lg:w-96 lg:h-96
+              rounded-lg object-cover
+            "
           />
         </a>
 
-        {/* BACKDROP / CONTENT SECTION (RIGHT) */}
-        <div className="w-full md:w-1/2 max-w-md p-6 backdrop-blur mt-15 text-left">
-          
+        {/* CONTENT SECTION */}
+        <div className="
+          w-full md:w-1/2
+          max-w-md
+          p-6
+          backdrop-blur
+          text-center md:text-left
+        ">
           <a href={userData.html_url} target="_blank" rel="noopener noreferrer">
             <h5 className="text-3xl font-semibold mb-4">
               {userData.name || userData.login}
@@ -38,33 +48,18 @@ export default function Githubui({ userData }) {
             Public Repos: {userData.public_repos}
           </p>
 
-          {/* BUTTON CENTER */}
-          <div className="flex justify-center">
+          <div className="flex justify-center md:justify-start">
             <a
               href={userData.html_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+              className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 transition"
             >
               View Profile on GitHub
-              <svg
-                className="w-3.5 h-3.5 ms-2"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
             </a>
           </div>
-
         </div>
+
       </div>
     </div>
   );
