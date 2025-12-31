@@ -52,7 +52,7 @@ export default function Header() {
               animate="animate"
               className="max-w-xl backdrop-blur-xl border border-cyan-400/20 rounded-2xl p-6"
             >
-              {"Hello Mr.SARANG".split("").map((char, i) => (
+              {"Hello SIR,".split("").map((char, i) => (
                 <motion.span
                   key={i}
                   variants={letter}

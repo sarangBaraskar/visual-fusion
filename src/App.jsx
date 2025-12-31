@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import Snowfall from "react-snowfall";
 import Header from "./component/Header";
-import Intro from "./component/intro";
+
 import { Route, Routes } from "react-router";
 import Aboutsection from "./Pages/Aboutsection";
+import Mask from "./component/Mask";
+
 
 
 
@@ -34,7 +36,7 @@ export default function App() {
   }, []);
 
   if (intro) {
-    return <Intro />;
+    return <Mask/>;
   }
 
 

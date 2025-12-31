@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function Intro() {
+export default function Mask() {
     return (
         <>
             <div className="fixed inset-0 z-[9999] bg-black">

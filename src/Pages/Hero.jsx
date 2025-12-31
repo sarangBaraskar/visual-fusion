@@ -24,7 +24,7 @@ export default function Hero() {
           animate="animate"
           className="text-5xl md:text-7xl font-bold mb-10"
         >
-          {"THE ARC OF PEACE".split("").map((char, i) => (
+          {"THE SKILL OF MINE".split("").map((char, i) => (
             <motion.span
               key={i}
               variants={letter}
@@ -41,7 +41,7 @@ export default function Hero() {
           animate="animate"
           className="max-w-xl text-slate-400 bg-white/5 backdrop-blur-xl border border-cyan-400/20 rounded-2xl p-6"
         >
-          {"Technology does not have to be loud to be powerful.This core represents balance, intelligence, and humanity".split("").map((char, i) => (
+          {"Technology does not have to be loud to be powerful. I am front-end developer by using my strong knowledge of HTML, CSS,Tailwind, Bootstrap, JavaScript, and React. I am dedicated, hardworking, and always ready to take challenges that help me and my team grow".split("").map((char, i) => (
             <motion.span
               key={i}
               variants={letter}
