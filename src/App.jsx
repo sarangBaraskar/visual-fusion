@@ -10,6 +10,7 @@ import Mask from "./component/Mask";
 
 
 
+
 export default function App() {
   const reactorRef = useRef(null);
   const [intro, setIntro] = useState(true);
@@ -61,6 +62,7 @@ export default function App() {
         <div className="fixed right-8 top-0 h-full w-px bg-[linear-gradient(transparent,#10b981,transparent)] opacity-30" />
 
         {/* NAVBAR */}
+      
 
         <Routes>
           <Route path="/" element={<Header />} />

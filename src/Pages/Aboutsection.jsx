@@ -16,7 +16,7 @@ const letter = {
 export default function Aboutsection() {
   return (
     <>
-      <section className="relative py-28 max-w-7xl mx-auto px-6">
+      <section className="relative  py-28 max-w-7xl mx-auto px-6">
 
         {/* ABOUT HEADING */}
         <AnimatedText

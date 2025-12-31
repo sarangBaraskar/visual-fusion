@@ -12,7 +12,17 @@ export default function Projectcard({ title, desc, link }) {
             >
                 <h3 className="text-xl font-semibold text-cyan-200 mb-3">{title}</h3>
                 <p className="text-slate-400">{desc}</p>
-                <span className='text-blue-700 cursor-pointer'>{link}</span>
+                <span className='text-blue-700 cursor-pointer'>{link && (
+                    <a
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block text-sm font-semibold
+            text-cyan-300 hover:text-emerald-300 transition"
+                    >
+                        View Project →
+                    </a>
+                )}</span>
             </motion.div>
         </>
     )
