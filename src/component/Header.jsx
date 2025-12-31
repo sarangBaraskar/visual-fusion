@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Hero from "../Pages/Hero";
 import Profile from "../Pages/Profile";
 import Mproject from "../Pages/Mproject";
-import Footer from "./footer";
+import Footer from "./Footer";
 
 
 
