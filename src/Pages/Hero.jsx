@@ -65,7 +65,7 @@ export default function Hero() {
         {/* 3D Model */}
         {canRender && (
         <model-viewer
-          src={`${import.meta.env.BASE_URL}svg11.glb`}
+          src="svg11.glb"
           auto-rotate
           camera-controls
           crossorigin="anonymous"
