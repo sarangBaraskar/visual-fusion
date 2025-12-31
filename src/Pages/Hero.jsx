@@ -68,6 +68,7 @@ export default function Hero() {
           src="/svg11.glb"
           auto-rotate
           camera-controls
+          crossorigin="anonymous"
           exposure="1"
           shadow-intensity="1"
           className="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px]"
