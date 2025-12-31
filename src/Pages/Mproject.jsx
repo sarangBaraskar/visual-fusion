@@ -234,7 +234,7 @@ export default function Mproject() {
       group-hover:to-emerald-200
     "
           >
-            Projects
+            About Me And My Projects
           </span>
         </button>
       </div>
