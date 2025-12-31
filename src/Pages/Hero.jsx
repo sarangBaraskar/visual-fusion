@@ -1,4 +1,4 @@
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 
 const textReveal = {
@@ -14,15 +14,16 @@ const letter = {
 
 
 export default function Hero() {
-  
+
   return (
     <>
-      <section className="relative py-28 flex flex-col items-center text-center">
+      <section className="relative py-28 flex flex-col items-center text-center gap-10">
+        {/* Heading */}
         <motion.h1
           variants={textReveal}
           initial="initial"
           animate="animate"
-          className="text-5xl md:text-7xl font-bold mb-10"
+          className="text-5xl md:text-7xl font-bold"
         >
           {"THE SKILL OF MINE".split("").map((char, i) => (
             <motion.span
@@ -35,39 +36,27 @@ export default function Hero() {
           ))}
         </motion.h1>
 
+        {/* Description */}
         <motion.p
-          variants={textReveal}
-          initial="initial"
-          animate="animate"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
           className="max-w-xl text-slate-400 bg-white/5 backdrop-blur-xl border border-cyan-400/20 rounded-2xl p-6"
         >
-          {"Technology does not have to be loud to be powerful. I am front-end developer by using my strong knowledge of HTML, CSS,Tailwind, Bootstrap, JavaScript, and React. I am dedicated, hardworking, and always ready to take challenges that help me and my team grow".split("").map((char, i) => (
-            <motion.span
-              key={i}
-              variants={letter}
-              className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-cyan-200 to-emerald-200"
-            >
-              {char === " " ? "\u00A0" : char}
-            </motion.span>
-          ))}
-        
+          Technology does not have to be loud to be powerful. I am a front-end
+          developer with strong knowledge of HTML, CSS, Tailwind, Bootstrap,
+          JavaScript, and React.
         </motion.p>
 
-
+        {/* 3D Model */}
         <model-viewer
           src="/svg11.glb"
-          alt="3D Model"
           auto-rotate
-          auto-rotate-delay="1"
-          rotation-per-second="2.8"
           camera-controls
-          interaction-policy="allow-when-focused"
-          style={{ width: "400px", height: "400px" }}
+          className="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px]"
         />
-
-
-
       </section>
+
     </>
   )
 }
