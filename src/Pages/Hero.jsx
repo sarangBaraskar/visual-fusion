@@ -56,7 +56,7 @@ export default function Hero() {
           camera-controls
           exposure="1"
           shadow-intensity="1"
-          className="w-[300px] h-[300px]"
+          className="w-[400px] h-[400px]"
         />
 
       </section>
