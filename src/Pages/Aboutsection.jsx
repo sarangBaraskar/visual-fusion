@@ -56,7 +56,7 @@ export default function Aboutsection() {
           link="https://sarangbaraskar.github.io/E-commerce-add_to_cart/" />
 
           <Projectcard title="Note-app" desc="This application delivers a fast, intuitive, and responsive note-taking experience—with real-time updates, smooth navigation, and clean design. “It uses a modular component-based structure to ensure maintainability, scalability, and code reuse as the project grows. The user interface is designed to be accessible, responsive, and user-friendly—combining modern design with high performance."
-          link="https://notes-iu0yab02g-sarang-barskars-projects.vercel.app" />
+          link="https://notes-app-one-bice.vercel.app/" />
 
           <Projectcard title="Photo Gallery Web Application " desc="Developed a dynamic, responsive online gallery using modern web technologies. Designed user-friendly UI/UX, implemented efficient image management and display features, and ensured smooth cross-device performance. The project demonstrates my ability to build polished front-end applications, manage media content effectively, and deliver a clean user experience from design through deployment.."
           link=" https://gallery-project-murex.vercel.app/" />
