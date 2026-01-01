@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+
 
 
 const textReveal = {
@@ -15,19 +15,6 @@ const letter = {
 
 
 export default function Hero() {
-
-  const [canRender, setCanRender] = useState(false);
-
-  useEffect(() => {
-    // wait until model-viewer custom element is defined
-    if (window.customElements.get("model-viewer")) {
-      setCanRender(true);
-    } else {
-      window.customElements.whenDefined("model-viewer").then(() => {
-        setCanRender(true);
-      });
-    }
-  }, []);
 
   return (
     <>
@@ -63,17 +50,15 @@ export default function Hero() {
         </motion.p>
 
         {/* 3D Model */}
-        {canRender && (
         <model-viewer
-          src="svg11.glb"
+          src="/svg11.glb"
           auto-rotate
           camera-controls
-          crossorigin="anonymous"
           exposure="1"
           shadow-intensity="1"
-          className="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px]"
+          className="w-[300px] h-[300px]"
         />
-      )}
+
       </section>
 
     </>
