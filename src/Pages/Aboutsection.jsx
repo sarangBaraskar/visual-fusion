@@ -83,6 +83,12 @@ export default function Aboutsection() {
           desc="I also have a solid one-year teaching background, showcasing my ability to effectively communication and impart knowledge"
         />
 
+        <Edu_Expcard
+          Com_name="Mindcoders "
+          duration="6 Month"
+          desc="This is a Institute freeliance company.I Work on there react and developed user friendly UI."
+        />
+
         {/* EDUCATION */}
         <AnimatedText
           text="EDUCATION"

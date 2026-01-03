@@ -45,7 +45,7 @@ export default function Profile() {
       <motion.section
         variants={fadeUp}
         viewport={{ once: true }}
-        className="max-w-7xl mx-auto px-6 py-24"
+        className="max-w-7xl mx-auto px-6 py-24 "
       >
         {/* 🔹 SEARCH FORM (Always Center) */}
         <div className="w-full flex justify-center mb-16">
@@ -53,7 +53,7 @@ export default function Profile() {
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <input
                 type="text"
-                className="w-full sm:w-auto px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="w-full sm:w-auto px-4 py-2 border border-gray-300  rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                 disabled
                 placeholder="Sarang Baraskar"
                 onChange={(e) => setUsername(e.target.value)}

@@ -33,7 +33,7 @@ export default function Header() {
               animate="animate"
               className="tracking-[0.4em] text-cyan-300 font-semibold"
             >
-              {"ARC".split("").map((char, i) => (
+              {"Mr.SARANG".split("").map((char, i) => (
                 <motion.span
                   key={i}
                   variants={letter}
