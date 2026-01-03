@@ -86,7 +86,7 @@ export default function Aboutsection() {
         <Edu_Expcard
           Com_name="Mindcoders "
           duration="6 Month"
-          desc="This is a Institute freeliance company.I Work on there react and developed user friendly UI."
+          desc="This is a Institute and freeliance company.I learn and Work on there react and developed user friendly UI."
         />
 
         {/* EDUCATION */}
