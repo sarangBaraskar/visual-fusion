@@ -53,16 +53,16 @@ export default function Aboutsection() {
 
 
           <Projectcard title="E-commerce web clone" desc="An E-commerce web clone implementing add-to-cart functionality using HTML, JavaScript, and CSS. The project showcases dynamic cart updates, product listing, and interactive user experience."
-          link="https://sarangbaraskar.github.io/E-commerce-add_to_cart/" />
+            link="https://sarangbaraskar.github.io/E-commerce-add_to_cart/" />
 
           <Projectcard title="Note-app" desc="This application delivers a fast, intuitive, and responsive note-taking experience—with real-time updates, smooth navigation, and clean design. “It uses a modular component-based structure to ensure maintainability, scalability, and code reuse as the project grows. The user interface is designed to be accessible, responsive, and user-friendly—combining modern design with high performance."
-          link="https://notes-app-one-bice.vercel.app/" />
+            link="https://notes-app-one-bice.vercel.app/" />
 
           <Projectcard title="Photo Gallery Web Application " desc="Developed a dynamic, responsive online gallery using modern web technologies. Designed user-friendly UI/UX, implemented efficient image management and display features, and ensured smooth cross-device performance. The project demonstrates my ability to build polished front-end applications, manage media content effectively, and deliver a clean user experience from design through deployment.."
-          link=" https://gallery-project-murex.vercel.app/" />
+            link=" https://gallery-project-murex.vercel.app/" />
 
           <Projectcard title="To-Do List Application (Redux + React) " desc="Designed and implemented a responsive task-management application using React and Redux. The project includes features such as task creation, status updates, filtering, and persistent state management. Built with clean component architecture and optimized state handling to ensure smooth and reliable user interactions. Deployed on Vercel for fast and stable performance."
-          link=" https://todolist-with-redux-zeta.vercel.app/" />
+            link=" https://todolist-with-redux-zeta.vercel.app/" />
         </div>
 
         {/* EXPERIENCE */}
@@ -85,8 +85,15 @@ export default function Aboutsection() {
 
         <Edu_Expcard
           Com_name="Mindcoders "
-          duration="6 Month"
-          desc="This is a Institute and freeliance company.I learn and Work on there react and developed user friendly UI."
+          duration="1 year"
+          desc="From 10th January 2025 to 12th February 2026 as a MERN Stack Developer 
+             Designing, developing, and maintaining web applications using MongoDB, Express.js,
+React.js, and Node.js,
+Writing clean, scalable, and efficient code,
+Integrating RESTful APIs and third-party services,
+Debugging, testing, and maintaining applications for optimal performance,
+Collaborating effectively with cross-functional teams to implement new features,
+Ensuring the security, responsiveness, and scalability of web applications."
         />
 
         {/* EDUCATION */}
@@ -101,7 +108,7 @@ export default function Aboutsection() {
           desc="8.26 (CGPA)"
         />
 
-         <Edu_Expcard
+        <Edu_Expcard
           Com_name="DB.Science "
           duration="Gondia.(Nagpur Board)"
           desc="68.50%"
